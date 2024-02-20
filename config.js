@@ -12,8 +12,8 @@ global.location="Lahore,Pakistan."
 global.mongodb= process.env.MONGODB_URI || ""
 global.allowJids= process.env.ALLOW_JID || "null" 
 global.blockJids= process.env.BLOCK_JID || "120363023983262391@g.us"
-global.DATABASE_URI=process.env.DATABASE_URL || ""
-global.scan = "https://suhail-md-vtsf.onrender.com/";
+global.DATABASE_URI = process.env.DATABASE_URL || ""
+
 global.timezone= process.env.TZ || process.env.TIME_ZONE || "Asia/Karachi";
 global.github=process.env.GITHUB|| "https://github.com/SuhailTechInfo/Suhail-Md";
 global.gurl  =process.env.GURL  || "https://whatsapp.com/channel/0029Va9thusJP20yWxQ6N643";
@@ -30,7 +30,7 @@ global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]
 
 
 //========================= [ BOT SETTINGS ] =========================\\
-global.style = process.env.STYLE   || "5",  // put '1' to "5" here to check bot styles
+global.style = process.env.STYLE   || '5',  // put '1' to "5" here to check bot styles
 global.flush = process.env.FLUSH   || "false"; // Make it "true" if bot not responed
 global.gdbye = process.env.GOODBYE || "false"; 
 global.wlcm  = process.env.WELCOME || "true";  // Make it "false" for disable WELCOME 
@@ -45,7 +45,7 @@ global.waPresence= process.env.WAPRESENCE ||  "set according to your need" ; // 
 //========================= [ AUTO READ MSGS & CMDS ] =========================\\
 global.readcmds = process.env.READ_COMMAND || "false"
 global.readmessage = process.env.READ_MESSAGE || "false"
-global.readmessagefrom = process.env.READ_MESSAGE_FROM || "null,923xxxxxxxx";
+global.readmessagefrom = process.env.READ_MESSAGE_FROM || "923184474176,923xxxxxxxx";
 
 
 //========================= [ AUTO SAVE & READ STATUS ] =========================\\
@@ -54,25 +54,26 @@ global.save_status = process.env.AUTO_SAVE_STATUS || "false"
 global.save_status_from =  process.env.SAVE_STATUS_FROM  || "null,923xxxxxxxx";
 global.read_status_from =  process.env.READ_STATUS_FROM  ||  "923184474176,923xxxxxxxx";
 
-
+global.api_smd = "https://api-smd-1.vercel.app"
+global.scan = "https://suhail-md-vtsf.onrender.com/";
 
 module.exports = {
 
   menu: process.env.MENU || "", /**  Available @MENU @Schemes 1: Aztec_Md, 2: A17_Md, 3: Suhail-Md Default ---------- If Not Choose then it Randomely Pic One Of Them Each time **/
 
-  HANDLERS : process.env.PREFIX || ".",
-  BRANCH : process.env.BRANCH   || "main",
+  HANDLERS: process.env.PREFIX  || ".",
+  BRANCH  : process.env.BRANCH  || "main",
   VERSION : process.env.VERSION || "V.1.2.8",
   caption : process.env.CAPTION || "©sᴜʜᴀɪʟ²²¹-ᴍᴅ" , // ```『 ᴘᴏᴡᴇʀᴇᴅ ʙʏ sᴜʜᴀɪʟ²²¹-ᴍᴅ 』```", //*『sᴜʙsᴄʀɪʙᴇ • sᴜʜᴀɪʟ ᴛᴇᴄʜ』*\n youtube.com/@suhailtechinfo0"),
  
-  author: process.env.PACK_AUTHER || "Suhail-MD",
+  author : process.env.PACK_AUTHER|| "Suhail-MD",
   packname: process.env.PACK_NAME || "♥️",
   botname : process.env.BOT_NAME  || "sᴜʜᴀɪʟ-ᴍᴅ",
   ownername:process.env.OWNER_NAME|| "It'x Suhail",
 
-  sessionName:process.env.SESSION_ID|| "",  // PUT SESSION ID HERE 
-  errorChat: process.env.ERROR_CHAT || "",
-  KOYEB_API: process.env.KOYEB_API  || "false",
+  sessionName:process.env.SESSION_ID || "",  // PUT SESSION ID HERE 
+  errorChat : process.env.ERROR_CHAT || "",
+  KOYEB_API : process.env.KOYEB_API  || "false",
 
   REMOVE_BG_KEY : process.env.REMOVE_BG_KEY  || "",
   OPENAI_API_KEY: process.env.OPENAI_API_KEY || "",
